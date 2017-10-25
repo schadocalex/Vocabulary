@@ -1,0 +1,36 @@
+{
+  "name": "vocabulary-learning",
+  "version": "0.0.1",
+  "description": "Learn Vocabulary",
+  "main": "main.js",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "lodash": "^4.16.4",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-class-properties": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "catw": "^1.0.1",
+    "http-server": "^0.9.0",
+    "less": "^2.7.1",
+    "uglify-js": "^2.7.3",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "dev": "npm run env NODE_ENV=development && watchify -t babelify main.js -o bundle.js -dv",
+    "bundle": "npm run env NODE_ENV=production && browserify -t babelify main.js -o bundle.js && uglifyjs bundle.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schadocalex/Vocabulary.git"
+  },
+  "author": "Alexis Schad <alexis@ytotech.com>",
+  "license": ""
+}

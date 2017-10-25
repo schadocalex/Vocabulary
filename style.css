@@ -1,0 +1,46 @@
+body {
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#container {
+    text-align: center;
+    max-width: 90%;
+}
+
+#container .input {
+    font-size: 48px;
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+}
+
+#container form {
+    margin-top: 50px;
+}
+
+#container h2 {
+    font-size: 36px;
+}
+
+#answer {
+    margin-top: 20px;
+}
+
+#answer.correct {
+    color: green;
+}
+
+#answer.notCorrect {
+    color: red;
+}
+
+iframe {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    background-size: cover;
+}
